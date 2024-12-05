@@ -19,7 +19,6 @@ def create_board():
     # Add properties, railroads, utilities, chance/community chest, etc.
     board.append(Space("Go", "Go"))
     board.append(Property("Mediterranean Avenue", 60, "Brown"))
-    # ... Add the rest of the spaces
     return board
 
 def roll_dice():
