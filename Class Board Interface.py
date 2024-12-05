@@ -14,15 +14,15 @@ class Property(Space):
         self.color = color
         self.owner = None
 
-def create_board():
-    board = []
-    # Add properties, railroads, utilities, chance/community chest, etc.
-    board.append(Space("Go", "Go"))
-    board.append(Property("Mediterranean Avenue", 60, "Brown"))
-    return board
+    def create_board():
+        board = []
+        # Add properties, railroads, utilities, chance/community chest, etc.
+        board.append(Space("Go", "Go"))
+        board.append(Property("Mediterranean Avenue", 60, "Brown"))
+        return board
 
-def roll_dice():
-    return random.randint(1, 6) + random.randint(1, 6)
+    def roll_dice():
+        return random.randint(1, 6) + random.randint(1, 6)
 
 if __name__ == "__main__":
     board = create_board()
